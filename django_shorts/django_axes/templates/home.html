@@ -5,6 +5,9 @@
     <title>Django Shorts</title>
 </head>
 <body>
-  <h4>Django Axes</h4>
+  <h2>Django Axes</h2>
+  {% if user.is_authenticated %}
+  <p>Hello {{ user.username }}</p>
+  {% endif %}
 </body>
 </html>
